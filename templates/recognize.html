@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognize</title>
+</head>
+<body>
+    <script>
+        var leftVideo = document.getElementById('leftVideo');
+        // var rightVideo = document.getElementById('rightVideo');
+        
+        leftVideo.onplay = function() {
+        // Set the source of one element to be a stream from another.
+        var stream = leftVideo.captureStream();
+        // rightVideo.srcObject = stream;
+        };
+        </script>
+    <video src="" id = "leftVideo"></video>  
+    <img src="{{ url_for('video_feed') }}" alt="">
+    <h1>{{ d }}</h1>
+    <form name="Capture" action="http://192.168.1.68:5000">
+        <input type="submit" value="Return"> 
+    </form>
+</body>
+</html>

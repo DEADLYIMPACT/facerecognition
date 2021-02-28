@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognize</title>
+</head>
+<body>
+    <!-- <img src="{{ url_for('video_feed') }}" alt=""> -->
+    <form name="Capture" action="http://192.168.1.68:5000/capturePage" method="post">
+        <input type="submit" value="Face Capture"> 
+    </form>
+    <form name="Train" action="http://192.168.1.68:5000/train" method="post">
+        <input type="submit" value="Update Save"> 
+    </form>
+    <form name="Recognize" action="http://192.168.1.68:5000/recognize" method="post">
+        <input type="submit" value="Recognize"> 
+    </form>
+</body>
+</html>

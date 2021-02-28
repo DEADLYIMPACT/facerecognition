@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+</head>
+<body>
+    <form action="http://192.168.1.68:5000/capture" name="Send_Data", method="post">
+        <input type="text" placeholder="Name" name="Name">
+        <input type="number" placeholder="ID" name="Id">
+        <input type="submit" value="SUBMIT">
+    </form>
+    <img src="{{ url_for('video_feed') }}" alt="">
+</body>
+</html>
